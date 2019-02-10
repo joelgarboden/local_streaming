@@ -8,9 +8,9 @@ Local clone: `DNS=$HOSTNAME docker-compose up --build`
 
 ### OBS
 
-`Stream Type`: `Custom Streaming Server`
-`URL`: `rtmp://DOCKER_HOSTNAME/live`
-`Stream Key`: `stream`
+* `Stream Type`: `Custom Streaming Server`
+* `URL`: `rtmp://DOCKER_HOSTNAME/live`
+* `Stream Key`: `stream`
 
 ### Browser
 
