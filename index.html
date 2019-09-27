@@ -13,14 +13,14 @@
           var video = document.getElementById('video');
           if(Hls.isSupported()) {
             var hls = new Hls();
-            hls.loadSource('http://DOCKER_HOST:8080/hls/stream.m3u8');
+            hls.loadSource('/hls/stream.m3u8');
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED,function() {
               video.play();
             });
           }
           else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = 'http://DOCKER_HOST:8080/hls/mystream.m3u8';
+            video.src = '/hls/mystream.m3u8';
             video.addEventListener('loadedmetadata',function() {
               video.play();
             });
